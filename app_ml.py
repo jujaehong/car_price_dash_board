@@ -26,17 +26,15 @@ def run_app_ml() :
         new_data = new_data.reshape(1,5)
         regressor = joblib.load('model/regressor.pkl') # joblib(주피터 노트북에서 잡립라이브러리로 저장한 인공지능 regressor.pkl 파일 가져오기)
         y_pred = regressor.predict(new_data) # 예측
+            
+        
         print(y_pred)
+        price = round(y_pred[0])
 
         
         #달러짜리 차량 구매 가능합니다.
-        
-        print(round(y_pred[0]))
-        
-        price = round(y_pred[0])
-
-        print(str(price)+ '달러짜리 차량 구매 가능합니다.')
+        # print(round(y_pred[0]))
+        # print(str(price)+ '달러짜리 차량 구매 가능합니다.')
+        # print('{}달러짜리 차량 구매 가능합니다.'.format(price))
         print(f'{price}달러짜리 차량 구매 가능합니다.')
-        print('.{}달러짜리 차량 구매 가능합니다.'.format(price))
-
         st.text(f'{price}달러짜리 차량 구매 가능합니다.')

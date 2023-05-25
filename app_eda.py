@@ -44,4 +44,4 @@ def run_app_eda():
     if len(column_list) >= 2: # 선택을 안하거나 하나만 선택하면 X
         fig2 = plt.figure() # 히트맵
         sns.heatmap(data=df[column_list].corr(), annot=True, vmin=-1, vmax=1, cmap='coolwarm', fmt='.2f', linewidths=0.5)
-        st.pyplot(fig2)
+        st.pyplot(fig2) 
