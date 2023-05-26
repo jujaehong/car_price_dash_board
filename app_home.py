@@ -4,6 +4,7 @@ def run_app_home():
     
     st.subheader('환영합니다.')
     st.text('좋은 서비스로 제공하겠습니다.')
+    st.text('자동 배포 처리된 앱입니다.')
 
     st.text('이앱은 고객 데이터와 자동차 구매 데이터에 대한 내용입니다.')
 
