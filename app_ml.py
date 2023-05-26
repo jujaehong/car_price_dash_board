@@ -35,6 +35,7 @@ def run_app_ml() :
         #달러짜리 차량 구매 가능합니다.
         # print(round(y_pred[0]))
         # print(str(price)+ '달러짜리 차량 구매 가능합니다.')
-        # print('{}달러짜리 차량 구매 가능합니다.'.format(price))
-        print(f'{price}달러짜리 차량 구매 가능합니다.')
-        st.text(f'{price}달러짜리 차량 구매 가능합니다.')
+        print('당신은 {}달러짜리 차량 구매 가능합니다.'.format(price))
+        # print(f'{price}달러짜리 차량 구매 가능합니다.')
+        # st.text(f'{price}달러짜리 차량 구매 가능합니다.')
+        st.text('당신은 {}달러짜리 차량 구매 가능합니다.'.format(price))
